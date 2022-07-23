@@ -1,3 +1,18 @@
 body {
-    background-color: #FF0000;
+    background-color: #efe5e5;
+}
+h2{
+    background-color: darkgreen;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+fieldset{
+    display: flex;
+    padding: 10px;
+    background-color: antiquewhite;
+    font-size: 17px;
+    font-weight: bold;
+
 }

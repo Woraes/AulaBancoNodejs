@@ -8,6 +8,28 @@ Opa {{name}} {{lastName}}, tudo bem?
     Beleza?
 {{/showOld}}
 
+
+
+<fieldset class="field">
+    <legend>Novo Usuario</legend>
+    <form method="post" action="/novousuario">
+        <label for="">Digite Seu nome: </label>
+        <input type="text" name="name" placeholder="Nome..."  /><br/><br/>
+        <label for="">Digite sua idade:</label>
+        <input type="number" name="age" placeholder="Idade..."  /><br/><br/>
+        <input type="submit" value="Inserir Usuario"/>
+
+    </form>
+</fieldset>
+<hr/>
+<h2>Usuarios do Banco</h2>
+<ul>
+    {{#users}}
+        <li>Nome: {{name}} - Idade: {{age}}</li>
+    {{/users}}
+
+</ul>
+
 <hr/>
 <h2>Produtos</h2>
 <ul>
